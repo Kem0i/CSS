@@ -1,0 +1,28 @@
+/* 
+Typography is the way that text is arranged and presented
+*/
+
+body {
+  padding: 10%;
+  font-size: 2rem;
+/* if first not found it goes to the second and likewise */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* when you put a comma you putting for both of the but without coma let's say(h1 h2) it will look for h2 in h1 only */
+/* input,
+button {
+  font: inherit;
+} */
+
+/* to choose a specific text you can surround with element span */
+p {
+  /* for text there is: */
+  /* text-decoration(involves mostly stuff like underlining) */
+  /* text-transform(involves the cases) */
+  /* text-align(involves placement of the text) mostly justify brings it out better and default is left */
+  /* text-indent(space at the first character) */
+
+  /* for line-height(increases space between lines) */
+  line-height: 1.5;
+}

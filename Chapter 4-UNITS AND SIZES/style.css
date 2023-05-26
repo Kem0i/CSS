@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* covers the entire page */
+  min-height: 100vh;
+}
+
+h1 {
+  border: 2px dashed red;
+  /* Here it takes up 50% of the percentage placed in the parent element */
+  width: 50%;
+  font-size: 3rem;
+  /* padding is the space around a text such as inside the border */
+  /* here the padding takes 1.5 of the root size */
+  padding: 0.5em;
+}
+
+main {
+  font-size: 2rem;
+}
+
+/* rem is for the default size of the root which is 16px thus 2rem is 32px  */
+/* rem does not work like the width as it's not relative to the parent but the root element */
+/* if you us just (em) it looks at the parent not the root*/
+p {
+  font-size: 1rem;
+  /* helps us determine the characters before a line wraps */
+  width: 40ch;
+}

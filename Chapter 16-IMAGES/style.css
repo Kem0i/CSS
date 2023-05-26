@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* Begin Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  /* To remove space not expected at the bottom */
+  display: block;
+}
+/* End Reset */
+
+/* Utility Classes */
+.nowrap {
+  white-space: nowrap;
+}
+
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+/* End Utility Classes */
+
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+  background-color: aliceblue;
+
+  /* The order followed here is image then background as image comes over and that order is followed henceforth*/
+  background-image: url("../Chapter 16-IMAGES/img/bubbles.png"),
+    /* mixes colors (direction, then colors in order)*/
+      linear-gradient(to left, steelblue, #fff);
+  background-repeat: repeat-y, no-repeat;
+  background-position: right center;
+  background-size: 20% auto;
+  /* for short hand that is background(repeat position url, THEN PUT FOR SECOND IMAGE) */
+}
+
+/* To make text to be seen */
+.container {
+  background-color: rgb(251, 210, 156);
+  background-image: url("../Chapter 16-IMAGES/img/map-2176x1451.png");
+  /* if image is small it continues continuously */
+  background-repeat: repeat;
+  /* To see the image on which side*/
+  background-position: top;
+  /* To make big image to resize */
+  background-size: cover;
+}
+
+.hero {
+  border-bottom: 2px solid #000;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+
+  background-color: hsla(0, 0%, 0%, 0.35);
+}
+
+.h1 {
+  font-size: 500%;
+  color: aliceblue;
+  /* (x-axis y-axis blurvalue colorofshadow ) */
+  text-shadow: 2px 2px 5px #000;
+  /*   background-color: hsla(0, 0%, 0%, 0.404);
+  padding: 0.25rem;
+  border-radius: 10px; */
+}
+
+.profile-pic-figure {
+  width: 35%;
+}
+
+.profile-pic-figure img {
+  /* To make it responsive */
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 5px double gray;
+  border-radius: 50%;
+}
+
+.example {
+  margin: 1rem;
+  padding-left: 20px;
+  border: 1px solid red;
+}
+
+.example img {
+  /* This is 25% of the container size */
+  width: 25%;
+  height: auto;
+}
+
+.clip {
+  font-weight: 800;
+  font-size: 18rem;
+  text-align: center;
+  background-image: url("../Chapter 16-IMAGES/img/scenic-2200x1331.png");
+  background-size: 100%;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

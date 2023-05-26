@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* p {
+  background-color: lightgrey;
+} */
+
+/* .opposite {
+  /* allows us to use margin and padding element eithout it it woukd overlsp the others(applies to padding only) */
+/* block elements stack over each other while inline follow each other */
+/* block elements take over all width available while inline take width of content */
+/*   display: inline-block;
+  background-color: #333;
+  color: whitesmoke;
+  margin-top: 100px;
+  height: 200px;
+  padding: 4rem;
+} */
+
+ul {
+  list-style-type: none;
+  padding: 0.5rem;
+  text-align: right;
+  background-color: #333;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin-inline: 1rem;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover,
+li a:focus {
+  text-decoration: underline;
+}

@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid #000;
+  display: flex;
+  /* creates space between each flex */
+  gap: 1rem;
+  /* Mainly deals with HORIZONTAL!!!!. Moves content to one section eg:center,flex-end */
+  justify-content: space-evenly;
+  /* Deals with VERTICAL!!! */
+  align-items: center;
+  /* makes the content of flex move differently*/
+  /* flex-direction: row; */
+  /* makes the flex wrap when page is resized */
+  /* flex-wrap: wrap; */
+  /* short form of the 2 above */
+  flex-flow: row wrap;
+  /* Deals with ROWS!!! */
+  align-content: space-evenly;
+}
+
+.box {
+  /* min-width: 100px; */
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+
+  /* helps centre the content in the box  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* they grow to fill the page evenly */
+  /* flex-grow: 1; */
+  /* it gives the basic width */
+  /* flex-basis: 100px; */
+
+  /* The short hand for the one's above is:flex, they follow each other as shown(grow, shrink, basis) */
+  flex:1 1 100px;
+}
+
+/* the nth-child() helps us select a specific one from the group */
+.box:nth-child(2) {
+  /* flex-shrink(does the same but when page is minimized) */
+  /* gives twice to the second of additional space when the page is enlarged */
+  /* flex-grow: 2; */
+  flex:2 2 100px;
+  /* negative value to put it at the first */
+  order: 0;
+}

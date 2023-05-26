@@ -1,0 +1,16 @@
+body {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background: papayawhip;
+  /* for rgb  it stands for red, green, blue with value 0-255 format:(value of red, value of green, value of blue) */
+  /* for rgba it creates the alpha channel with value from 0-1  */
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* for a given pair just put the first one only for #( hexa decimal) example: for #0000FF you can put #00F */
+/* for non-pairs give the entire thing such as #808080 */
+/* there is also hsl that stands for hue(different colours withnthe slider) saturation(check for full clour) and lightness(100% is white, others is in between, 0% is black) */
+p {
+    color: rgba(100, 100, 100, 0.466);
+}
